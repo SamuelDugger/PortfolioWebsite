@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body data-bs-theme="light">
+    <button
+      type="button"
+      class="btn btn-danger btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+    <div id="progressBar"></div>
+    <div id="scrollPath"></div>
+    <div class="container-fluid mt-5">
+      <header class="top mt-5 mx-4">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand logo" href="index.html">SD</a>
+          <div class="d-flex">
+            <div class="toggler out-nav my-2">
+              <div class="checkbox text-center">
+                <input
+                  type="checkbox"
+                  id="cbx"
+                  style="display: none"
+                  onclick="toggleTheme()"
+                />
+                <label for="cbx" class="toggle"><span></span></label>
+              </div>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              style="order: 1"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active fw-bold" href="index.html"
+                >Home <span class="sr-only"></span
+              ></a>
+              <a class="nav-item nav-link fw-bold" href="index.html#about"
+                >About</a
+              >
+              <a class="nav-item nav-link fw-bold" href="index.html#portf"
+                >Portfolio</a
+              >
+              <div class="toggler in-nav my-1">
+                <div class="checkbox text-center">
+                  <input
+                    type="checkbox"
+                    id="cbx2"
+                    style="display: none"
+                    onclick="toggleTheme()"
+                  />
+                  <label for="cbx" class="toggle"><span></span></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section class="hero-section text-center container py-5">
+        <div class="hero">
+          <div class="hero-text">
+            <h1 class="name display-4 fw-bold">Hi, I'm Samuel Dugger</h1>
+            <p>
+              I design and code beautifully simple things, and I love what I do.
+            </p>
+          </div>
+          <img
+            class="hero-img img-fluid mx-auto shadow-lg"
+            src="./images/me.png"
+            alt="logo"
+          />
+        </div>
+      </section>
+    </div>
+    <section class="body py-5">
+      <div class="container">
+        <h1 class="about display-4 fw-bold text-center py-4">About me</h1>
+        <div class="row gx-5 gy-5">
+          <div class="col-md-6">
+            <img
+              src="./images/Me.png"
+              class="img-fluid mx-auto shadow-lg"
+              alt=""
+            />
+          </div>
+          <div class="col-md-6">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+              cum. Aspernatur saepe, voluptatibus quisquam dolorem numquam
+              ducimus asperiores distinctio commodi quidem ipsum. Maiores
+              quibusdam dolor totam necessitatibus pariatur, repellat quam!
+              Autem distinctio ex quam totam, quae nemo odio eligendi voluptas,
+              vel, necessitatibus sit ullam incidunt impedit commodi! Nihil id
+              quidem, voluptatibus cum iusto, aliquid officiis, eaque quos illo
+              asperiores reprehenderit. Voluptas et libero ut! Delectus ratione,
+              aut, ducimus at atque impedit debitis quos harum soluta labore
+              facere? Culpa iure cupiditate eveniet, aut officia ipsum,
+              provident fuga vero minus praesentium quaerat. Laudantium, modi
+              tenetur sed aut non, earum totam cupiditate laborum ducimus, autem
+              fugiat assumenda sapiente perferendis eum blanditiis reiciendis
+              iure accusantium maxime odio? Voluptatibus distinctio quam hic
+              enim sapiente minus. Totam, earum cumque deleniti temporibus
+              reprehenderit distinctio vero voluptas eaque blanditiis natus
+              ratione recusandae nemo quidem nisi et soluta suscipit vel minus
+              possimus odit consequatur hic? Sequi unde rerum ipsa! Officiis ad
+              maxime error animi dolorum omnis dignissimos odit, minima voluptas
+              tempora nam obcaecati eaque nobis natus vel, recusandae voluptatem
+              illo repellendus aperiam! Praesentium eius aut, eaque quasi ut
+              voluptate! Neque quam eius deleniti eaque ratione et id soluta
+              repellendus, alias, consectetur minima quo delectus hic maiores
+              porro iure dolorum. Vero exercitationem optio nisi quas mollitia
+              temporibus, velit accusantium eaque. Distinctio assumenda aut
+              quidem provident nam ratione excepturi dignissimos, adipisci natus
+              rem praesentium, sint atque dicta cupiditate reprehenderit
+              eligendi explicabo amet architecto quia voluptas, suscipit nemo
+              totam? Non, sed accusantium. Fugit dolorum est numquam temporibus!
+              Officia aliquid magni iste deserunt ea? Officiis exercitationem
+              sit consequuntur nihil illum sed praesentium dolorem soluta optio,
+              deleniti rem doloremque amet, non cumque accusamus quos?
+              Laboriosam corrupti, dolor maxime sed qui enim vel similique
+              cumque consectetur. Nobis iure, praesentium accusamus, vero odio
+              animi dolorem atque ipsum quibusdam reprehenderit magnam voluptas
+              facilis, officiis neque asperiores. Deleniti? Explicabo excepturi
+              obcaecati repudiandae cumque commodi, corrupti iusto numquam ut
+              eos voluptate quasi, quaerat blanditiis quae expedita et,
+              veritatis mollitia itaque doloremque repellat ullam aut quisquam
+              nam aliquid? Voluptatibus, repellendus! Doloribus deserunt, rerum
+              voluptas a consequatur eius molestiae aliquid eaque aut
+              voluptatem, excepturi atque quasi at, minima qui! Repellat numquam
+              quia fugiat corrupti, debitis repellendus mollitia adipisci facere
+              accusamus modi! Ipsa, quae impedit. Corporis nam porro doloremque
+              eligendi neque ipsa, totam architecto optio deserunt itaque vel!
+              Neque suscipit vero temporibus dolores alias harum quod, eos eius
+              totam tenetur adipisci esse? Officiis asperiores perspiciatis
+              molestiae dolore cumque, inventore ipsum suscipit sit. Laborum
+              veniam molestias iusto. Eligendi eius nihil ea. Illum accusantium
+              delectus consequatur? Molestiae dolorum nostrum saepe quo, ad iure
+              autem? Iure impedit iste explicabo expedita alias qui minima
+              sapiente quae ut ad, quas eius esse corrupti magni nihil labore
+              dolorem laboriosam, cupiditate similique, enim ipsum sequi quia
+              tenetur? Porro, quidem? Qui eos placeat nesciunt ea quisquam
+              aliquid cumque ex fugiat, dignissimos eum provident commodi
+              mollitia iste delectus eveniet officia! Ut, praesentium debitis?
+              Nemo quibusdam quos et. Similique ab placeat pariatur. Modi atque
+              quo quia quae eligendi facilis suscipit quibusdam, sunt numquam
+              omnis. Quia perspiciatis alias ut labore omnis totam impedit natus
+              atque quisquam, velit dignissimos magnam deleniti itaque quas
+              architecto. Sint fuga ipsum architecto ratione necessitatibus,
+              asperiores nobis neque dignissimos. Eius iusto non nisi omnis,
+              quia quos quis delectus et natus excepturi iste? Sunt expedita
+              quaerat earum cupiditate, doloremque voluptate! Quo nulla nobis
+              numquam laborum, repudiandae odio iste quae iure aliquid harum?
+              Voluptate excepturi repellendus voluptas consectetur, harum
+              laudantium fugiat eum iure nihil velit aliquam cupiditate nostrum
+              est soluta sapiente! Cupiditate repellat accusantium dolores
+              maxime id voluptate unde quos rerum officiis rem, recusandae
+              veritatis, error debitis neque nemo, amet at. Dolorem nesciunt
+              adipisci vel, harum sunt id mollitia laudantium consectetur?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer text-light text-center py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="mb-0">&copy; 2023 name</p>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a href="home.html" class="text-light">Home</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="about.html" class="text-light">About</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="portfolio.html" class="text-light">Portfolio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a href="#" class="text-light"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-light"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </li>
+              <!-- Add more social media icons as needed -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="./js/lightDark.js"></script>
+    <script type="text/javascript">
+      let progress = document.getElementById("progressBar");
+      let totalHeight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function () {
+        let progressHeight = (window.pageYOffset / totalHeight) * 105; //adjust this as page size changes
+        progress.style.height = progressHeight + "%";
+      };
+    </script>
+    <script type="text/javascript">
+      function toggleTheme() {
+        const body = document.body;
+        const currentTheme = body.getAttribute("data-bs-theme");
+        const newTheme = currentTheme === "light" ? "dark" : "light";
+
+        // Toggle Bootstrap classes for light/dark themes
+        body.classList.remove(`bg-${currentTheme}`);
+        body.classList.add(`bg-${newTheme}`);
+
+        // Update the data-bs-theme attribute
+        body.setAttribute("data-bs-theme", newTheme);
+      }
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

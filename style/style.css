@@ -1,0 +1,252 @@
+:root {
+  /**
+   * colors
+   */
+  --bg-white: #f7f7f7;
+  --bg-lightgray: #eeeeee;
+  --bg-gray: #929aab;
+  --bg-black: #393e46;
+
+  --green: #198754;
+  --color3: #0e0229;
+
+  /**
+   * shadow
+   */
+
+  --shadow-1: 10px 0 60px hsla(0, 0%, 15%, 0.07);
+  --shadow-2: 10px 0 60px hsla(0, 0%, 15%, 0.1);
+
+  /**
+   * radius
+   */
+
+  --radius-5: 5px;
+  --radius-8: 8px;
+
+  /**
+   * transition
+   */
+
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease;
+  --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+}
+
+/* Title Font */
+@font-face {
+  font-family: jhFont;
+  src: url(../fonts/Jonathan\ Hetegral.otf);
+}
+
+.logo {
+  font-family: jhFont;
+}
+
+.hero-img {
+  max-height: 300px; /* Adjust this value based on your design preferences */
+  object-fit: cover;
+  object-position: center center; /* Center the image */
+  border-radius: 50%; /* Creates a circular shape */
+}
+
+/* Add some extra space between the navbar and the hero section */
+.top {
+  margin-bottom: 20px;
+}
+
+/* Add padding to the hero section */
+.hero-section {
+  padding: 20px;
+}
+
+h1 {
+  font-family: "eurostile", sans-serif;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: var(--color3);
+  border-color: var(--white);
+  color: var(--bg-white);
+}
+
+#btn-back-to-top:hover {
+  transition: 1s;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+#scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#progressBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+  }
+}
+#progressBar:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#progressBar:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#progressBar,
+#progressBar:before,
+#progressBar:after {
+  background: linear-gradient(to top, #3498db, #2ecc71);
+}
+.in-nav {
+  padding-left: 10px;
+}
+.out-nav {
+  display: none;
+}
+.toggle {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.toggle:before {
+  content: "";
+  text-align: right;
+  position: relative;
+  top: 3px;
+  left: 3px;
+  width: 50px;
+  height: 22px;
+  font-size: 10px;
+  display: block;
+  background: #e6e6e6;
+  border-radius: 30px;
+  -webkit-transition: background 0.2s ease;
+  -o-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+  padding: 2px 8px;
+}
+.toggle span {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  display: block;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.toggle span:before {
+  font-family: "Fontawesome";
+  content: "\f186";
+  position: absolute;
+  display: block;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  background: #000;
+  border-radius: 50%;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  pointer-events: none;
+  color: #fff;
+}
+
+#cbx:checked + .toggle:before,
+#cbx2:checked + .toggle:before {
+  background: #f6d379;
+  content: "";
+  text-align: left;
+  color: #fff;
+}
+
+#cbx:checked + .toggle span,
+#cbx2:checked + .toggle span {
+  background: #f1bc31;
+  -webkit-transform: translateX(31px);
+  -ms-transform: translateX(31px);
+  transform: translateX(31px);
+  -webkit-transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25),
+    background 0.15s ease;
+  -o-transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25),
+    background 0.15s ease;
+  transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25), background 0.15s ease;
+  -webkit-box-shadow: 0 3px 8px rgba(241, 188, 49, 0.7);
+  box-shadow: 0 3px 8px rgba(241, 188, 49, 0.7);
+}
+#cbx:checked + .toggle span:before,
+#cbx2:checked + .toggle span:before {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  font-family: "Fontawesome";
+  content: "\f185";
+  background: #f1bc31;
+  color: #000;
+}
+
+.toggler {
+  margin-right: 40px;
+}
+
+.footer {
+  background-color: var(--color3);
+}
+
+@media (max-width: 992px) {
+  .in-nav {
+    display: none;
+  }
+  .out-nav {
+    display: block;
+    margin-right: 20px;
+  }
+}
