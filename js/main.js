@@ -5,9 +5,6 @@ let mybutton = document.getElementById("btn-back-to-top");
 window.addEventListener("scroll", scrollFunction);
 
 function scrollFunction() {
-  console.log("Scrolling");
-  console.log("window.scrollY:", window.scrollY);
-
   if (window.scrollY > 20) {
     mybutton.style.display = "block";
   } else {
