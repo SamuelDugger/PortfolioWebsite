@@ -133,6 +133,9 @@ h1 {
 .in-nav {
   padding-left: 10px;
 }
+.in-nav .checkbox {
+  margin-top: 1.5px;
+}
 .out-nav {
   display: none;
 }
@@ -241,7 +244,7 @@ h1 {
   background-color: var(--color3);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 990px) {
   .in-nav {
     display: none;
   }
