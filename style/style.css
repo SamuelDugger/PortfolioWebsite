@@ -72,11 +72,45 @@
   padding: 20px;
 }
 
+.card {
+  background-color: var(--dark-blue);
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+#animated-icon {
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  cursor: pointer;
+}
+
+.vscode {
+  transform-style: preserve-3d; /* Ensure 3D transformation is preserved */
+  transition: transform 0.5s ease; /* Specify the transition property */
+}
+
+.card:hover .vscode {
+  animation: flip 1s ease-in-out; /* Use the flip animation on hover */
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg); /* Full flip */
+  }
+}
+
 h1 {
   font-family: "eurostile", sans-serif;
 }
 .about {
-  background-color: var(---blue);
+  background-color: var(--blue);
 }
 
 #btn-back-to-top {
