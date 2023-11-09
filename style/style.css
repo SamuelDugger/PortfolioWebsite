@@ -16,6 +16,7 @@
   /*   Color Pallete
  */
   --dark-blue-almost-black: #010521;
+  --darker-blue: #03273f;
   --dark-blue: #010942;
   --very-blue: #051696;
   --light-blue: #6475fa;
@@ -72,11 +73,11 @@
 }
 
 .card {
-  background-color: var(--dark-blue);
+  background-color: var(--darker-blue);
 }
 
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 #animated-icon {
   width: 100px; /* Adjust as needed */
@@ -90,7 +91,7 @@
 }
 
 .card:hover .vscode {
-  animation: flip 1s ease-in-out; /* Use the flip animation on hover */
+  animation: flipflop 1s ease-in-out; /* Use the flip animation on hover */
 }
 
 /* New flip animation styles for HTML5 & CSS */
@@ -115,6 +116,21 @@
   }
 }
 
+@keyframes flipflop {
+  0% {
+    transform: rotate3d(1, 0, 0, 0deg) rotate3d(0, 1, 0, 0deg)
+      rotate3d(0, 0, 1, 0deg);
+  }
+  50% {
+    transform: rotate3d(1, 0, 0, 180deg) rotate3d(0, 1, 0, 180deg)
+      rotate3d(0, 0, 1, 180deg);
+  }
+  100% {
+    transform: rotate3d(1, 0, 0, 360deg) rotate3d(0, 1, 0, 360deg)
+      rotate3d(0, 0, 1, 360deg);
+  }
+}
+
 h1 {
   font-family: "eurostile", sans-serif;
 }
@@ -127,9 +143,10 @@ h1 {
   bottom: 20px;
   right: 20px;
   display: none;
-  background-color: var(--bg-blue);
-  border-color: var(--bg-white);
-  color: var(--bg-white);
+  background-color: var(--darker-blue);
+  border-color: var(--white);
+  color: var(--white);
+  z-index: 999;
 }
 
 #btn-back-to-top:hover {
@@ -156,6 +173,7 @@ h1 {
   right: 0;
   width: 10px;
   animation: animate 5s linear infinite;
+  z-index: 998;
 }
 @keyframes animate {
   0%,

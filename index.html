@@ -140,7 +140,9 @@
         <div class="row row-cols-1 row-cols-md-3 g-4 .text-info">
           <div class="col">
             <div class="card h-100">
-              <div class="card-img-top html-css">
+              <div
+                class="html-css d-flex justify-content-center align-items-center"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -298,7 +300,7 @@
       let progress = document.getElementById("progressBar");
       let totalHeight = document.body.scrollHeight - window.innerHeight;
       window.onscroll = function () {
-        let progressHeight = (window.pageYOffset / totalHeight) * 105; //adjust this as page size changes
+        let progressHeight = (window.pageYOffset / totalHeight) * 100; //adjust this as page size changes
         progress.style.height = progressHeight + "%";
       };
     </script>
