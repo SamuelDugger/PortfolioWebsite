@@ -311,6 +311,7 @@
     <script src="./js/.js"></script>
     <script src="./js/lightDark.js"></script>
     <script src="./js/icons.js"></script>
+    <script src="./js/lnd.js"></script>
     <script type="text/javascript">
       let progress = document.getElementById("progressBar");
       let totalHeight = document.body.scrollHeight - window.innerHeight;
@@ -318,20 +319,6 @@
         let progressHeight = (window.pageYOffset / totalHeight) * 100; //adjust this as page size changes
         progress.style.height = progressHeight + "%";
       };
-    </script>
-    <script type="text/javascript">
-      function toggleTheme() {
-        const body = document.body;
-        const currentTheme = body.getAttribute("data-bs-theme");
-        const newTheme = currentTheme === "light" ? "dark" : "light";
-
-        // Toggle Bootstrap classes for light/dark themes
-        body.classList.remove(`bg-${currentTheme}`);
-        body.classList.add(`bg-${newTheme}`);
-
-        // Update the data-bs-theme attribute
-        body.setAttribute("data-bs-theme", newTheme);
-      }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
     <script
