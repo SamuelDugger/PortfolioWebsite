@@ -1,16 +1,23 @@
-function applyClickedStyles() {
-  var element = document.querySelector("html-css");
+/* const icons = document.querySelectorAll(".icon");
 
-  // Add the clicked class
-  element.classList.add("clicked");
+icons.forEach((icon) => {
+  let isAnimating = false;
 
-  // Listen for the animation end event
-  element.addEventListener(
-    "animationend",
-    function () {
-      // Remove the clicked class after the animation is complete
-      element.classList.remove("clicked");
-    },
-    { once: true }
-  ); // Use 'once' option to ensure the event is triggered only once
-}
+  function handleClick() {
+    if (!isAnimating) {
+      isAnimating = true;
+
+      const iconClone = icon.cloneNode(true);
+      iconClone.classList.add("clicked");
+      icon.parentNode.replaceChild(iconClone, icon);
+
+      setTimeout(() => {
+        iconClone.classList.remove("clicked");
+        iconClone.parentNode.replaceChild(icon, iconClone);
+        isAnimating = false;
+      }, 2000);
+    }
+  }
+
+  icon.addEventListener("click", handleClick);
+}); */

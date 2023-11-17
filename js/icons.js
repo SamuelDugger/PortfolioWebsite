@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
       animation.stop();
     });
 
-    animatedIconContainer.addEventListener("click", () => {
+    /* animatedIconContainer.addEventListener("click", () => {
       animation.goToAndPlay(0);
-    });
+    }); */
   }
 
   // Example usage for Python card

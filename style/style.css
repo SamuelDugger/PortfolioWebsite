@@ -85,7 +85,6 @@
 .animated {
   width: 100px; /* Adjust as needed */
   height: 100px; /* Adjust as needed */
-  cursor: pointer;
 }
 
 .vscode {
@@ -94,7 +93,7 @@
 }
 
 .card:hover .vscode {
-  animation: flipflop 1s ease-in-out; /* Use the flip animation on hover */
+  animation: flipflop 1.5s ease-in-out;
 }
 
 /* New flip animation styles for HTML5 & CSS */
@@ -104,11 +103,28 @@
 }
 
 .card:hover .html-css {
-  animation: flip 1s ease-in-out;
+  animation: flip 2s ease 0s 1 normal forwards;
 }
 
-.card .clicked .html-css {
-  animation: flip 1s ease-in-out;
+.sql {
+  transform-style: preserve-3d; /* Ensure 3D transformation is preserved */
+  transition: transform 0.5s ease; /* Specify the transition property */
+}
+
+.card:hover .sql {
+  animation: sql 2s ease 0s 1 normal forwards;
+}
+
+.icon.clicked.vscode {
+  animation: flipflop 1.5s ease-in-out;
+}
+
+.icon.clicked.sql {
+  animation: sql 2s ease 0s 1 normal forwards;
+}
+
+.icon.clicked.html-css {
+  animation: flip 2s ease 0s 1 normal forwards;
 }
 
 @keyframes flip {
@@ -135,6 +151,36 @@
   100% {
     transform: rotate3d(1, 0, 0, 360deg) rotate3d(0, 1, 0, 360deg)
       rotate3d(0, 0, 1, 360deg);
+  }
+}
+
+@keyframes sql {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
   }
 }
 
@@ -341,9 +387,13 @@ h1 {
 @media (max-width: 768px) {
   #scrollPath {
     display: none;
+    width: 0px;
+    height: 0px;
   }
 
   #progressBar {
     display: none;
+    width: 0px;
+    height: 0px;
   }
 }
