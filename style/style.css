@@ -115,16 +115,67 @@
   animation: sql 2s ease 0s 1 normal forwards;
 }
 
-.icon.clicked.vscode {
-  animation: flipflop 1.5s ease-in-out;
+.ps {
+  transform-style: preserve-3d; /* Ensure 3D transformation is preserved */
+  transition: transform 0.5s ease; /* Specify the transition property */
 }
 
-.icon.clicked.sql {
-  animation: sql 2s ease 0s 1 normal forwards;
+.card:hover .ps {
+  animation: ps 2s ease 0s 1 normal forwards;
 }
 
-.icon.clicked.html-css {
-  animation: flip 2s ease 0s 1 normal forwards;
+.boot {
+  transform-style: preserve-3d; /* Ensure 3D transformation is preserved */
+  transition: transform 0.5s ease; /* Specify the transition property */
+}
+
+.card:hover .boot {
+  animation: boot 2s ease 0s 1 normal forwards;
+}
+
+.csh {
+  transform-style: preserve-3d; /* Ensure 3D transformation is preserved */
+  transition: transform 0.5s ease; /* Specify the transition property */
+}
+
+.card:hover .csh {
+  animation: csh 2s ease 0s 1 normal forwards;
+}
+
+.php {
+  transform-style: preserve-3d; /* Ensure 3D transformation is preserved */
+  transition: transform 0.5s ease; /* Specify the transition property */
+}
+
+.card:hover .php {
+  animation: php 2s ease 0s 1 normal forwards;
+}
+
+.net {
+  transform-style: preserve-3d; /* Ensure 3D transformation is preserved */
+  transition: transform 0.5s ease; /* Specify the transition property */
+}
+
+.card:hover .net {
+  animation: net 2s ease 0s 1 normal forwards;
+}
+
+.cp {
+  transform-style: preserve-3d; /* Ensure 3D transformation is preserved */
+  transition: transform 0.5s ease; /* Specify the transition property */
+}
+
+.card:hover .cp {
+  animation: cp 2s ease 0s 1 normal forwards;
+}
+
+.unity {
+  transform-style: preserve-3d; /* Ensure 3D transformation is preserved */
+  transition: transform 0.5s ease; /* Specify the transition property */
+}
+
+.card:hover .unity {
+  animation: unity 2s ease 0s 1 normal forwards;
 }
 
 @keyframes flip {
@@ -151,6 +202,82 @@
   100% {
     transform: rotate3d(1, 0, 0, 360deg) rotate3d(0, 1, 0, 360deg)
       rotate3d(0, 0, 1, 360deg);
+  }
+}
+
+@keyframes csh {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  55% {
+    animation-timing-function: ease-in;
+    transform: scale(0.7);
+  }
+
+  72% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+
+  81% {
+    animation-timing-function: ease-in;
+    transform: scale(0.84);
+  }
+
+  89% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+
+  95% {
+    animation-timing-function: ease-in;
+    transform: scale(0.95);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+
+@keyframes unity {
+  0% {
+    opacity: 0;
+    transform: rotate(-540deg) scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+}
+
+@keyframes php {
+  0% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes cp {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
 
@@ -182,6 +309,132 @@
   100% {
     transform: scale3d(1, 1, 1);
   }
+}
+
+@keyframes ps {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateX(-48px);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateX(-26px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateX(-13px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateX(-6.5px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateX(-4px);
+  }
+
+  25%,
+  55%,
+  75%,
+  87%,
+  98% {
+    animation-timing-function: ease-out;
+    transform: translateX(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes net {
+  0% {
+    transform: rotate3d(0, 1, 0, 0);
+  }
+
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+@keyframes boot {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+.img-gallery {
+  height: 300px; /* Adjust the height as needed for smaller screens */
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the alpha value for transparency */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 h1 {
