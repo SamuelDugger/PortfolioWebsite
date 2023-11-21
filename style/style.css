@@ -56,6 +56,10 @@
   font-family: jhFont;
 }
 
+body p {
+  font-family: "europa", sans-serif;
+}
+
 .hero-img {
   width: 300px;
   height: 300px;
@@ -68,6 +72,13 @@
   margin-bottom: 20px;
 }
 /* Add padding to the hero section */
+/* .body {
+}
+ */
+/* Dark mode specific styles */
+/* [data-bs-theme="dark"] .body {
+}
+ */
 .hero-section {
   padding: 20px;
 }
@@ -192,16 +203,24 @@
 
 @keyframes flipflop {
   0% {
-    transform: rotate3d(1, 0, 0, 0deg) rotate3d(0, 1, 0, 0deg)
-      rotate3d(0, 0, 1, 0deg);
+    transform: rotate(0deg) scale(1) translateY(0);
+    opacity: 1;
+  }
+  25% {
+    transform: rotate(90deg) scale(1.1) translateY(-10px);
+    opacity: 0.8;
   }
   50% {
-    transform: rotate3d(1, 0, 0, 180deg) rotate3d(0, 1, 0, 180deg)
-      rotate3d(0, 0, 1, 180deg);
+    transform: rotate(180deg) scale(0.8) translateY(0);
+    opacity: 0.6;
+  }
+  75% {
+    transform: rotate(270deg) scale(1.1) translateY(10px);
+    opacity: 0.8;
   }
   100% {
-    transform: rotate3d(1, 0, 0, 360deg) rotate3d(0, 1, 0, 360deg)
-      rotate3d(0, 0, 1, 360deg);
+    transform: rotate(360deg) scale(1) translateY(0);
+    opacity: 1;
   }
 }
 
@@ -263,11 +282,19 @@
 
 @keyframes php {
   0% {
-    transform: scaleY(0);
+    transform: scaleX(1) rotate(0deg);
   }
-
+  25% {
+    transform: scaleX(1.1) rotate(10deg);
+  }
+  50% {
+    transform: scaleX(1) rotate(0deg);
+  }
+  75% {
+    transform: scaleX(1.1) rotate(-10deg);
+  }
   100% {
-    transform: scaleY(1);
+    transform: scaleX(1) rotate(0deg);
   }
 }
 
@@ -417,10 +444,10 @@
     0,
     0,
     0,
-    0.5
+    0.85
   ); /* Adjust the alpha value for transparency */
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.75s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -439,9 +466,6 @@
 
 h1 {
   font-family: "eurostile", sans-serif;
-}
-.about {
-  background-color: var(--blue);
 }
 
 #btn-back-to-top {

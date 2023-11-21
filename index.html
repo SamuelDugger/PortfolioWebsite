@@ -99,12 +99,11 @@
           </div>
         </nav>
       </header>
-
       <section class="hero-section text-center container py-5">
         <div class="hero">
           <div class="hero-text">
             <h1 class="name display-4 fw-bold">Hi, I'm Samuel Dugger</h1>
-            <p>
+            <p class="fs-4">
               I design and code beautifully simple things, and I love what I do.
             </p>
           </div>
@@ -116,24 +115,50 @@
         </div>
       </section>
     </div>
-    <section class="body py-5 about" id="about">
+    <section
+      class="body py-5 about"
+      id="about"
+      style="
+        background-image: url('./images/');
+        background-size: cover;
+        background-position: center;
+      "
+    >
       <div class="container mx-auto">
         <h1 class="display-4 fw-bold text-center py-4">About me</h1>
         <div class="row gx-5 gy-5">
           <div class="col-md-6">
-            <img
-              src="./images/Me.png"
-              class="img-fluid mx-auto shadow-lg"
-              style="border-radius: 25% 10%"
-              alt=""
-            />
+            <div
+              class="image-container shadow-lg"
+              style="
+                max-height: 550px;
+                overflow: hidden;
+                border-radius: 25% 10%;
+              "
+            >
+              <img
+                src="./images/Image.jpg"
+                class="img-fluid mx-auto shadow-lg"
+                style="width: 100%; height: auto; border-radius: 25% 10%"
+                alt=""
+              />
+            </div>
           </div>
           <div class="col-md-6">
-            <p>Lorem</p>
+            <p class="fs-5">
+              I'm a Software Developer and I love creating Software that makes a
+              positive impact and helps people. I proudly earned my Bachelor's
+              degree in Software Development with honors from OSU Institute of
+              Technology. Trustworthy, creative, and adept at communication, I
+              am eager to contribute my skills to a dynamic and rewarding
+              organization, ready to take on challenges that fuel both personal
+              and professional growth.
+            </p>
           </div>
         </div>
       </div>
     </section>
+
     <section class="body py-5 skills" id="skills">
       <div class="container mx-auto max-width-75 text-center">
         <h1 class="display-4 fw-bold py-4">My Skills</h1>
@@ -816,7 +841,7 @@
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 text-light">
           <div class="col">
             <div
-              class="h-100 shadow-lg d-flex align-items-center justify-content-center gallery"
+              class="h-100 shadow-lg p-2 d-flex align-items-center justify-content-center gallery rounded-1"
             >
               <img
                 src="./images/HaileyvilleWebsite.PNG"
@@ -824,14 +849,20 @@
                 alt="..."
               />
               <div class="overlay">
-                <h3>Title</h3>
-                <p>Content</p>
+                <h3>Haileyville Christian Church Website</h3>
+                <p class="container">
+                  This website was created for the Haileyville Christian Church
+                  for my capstone course and is still up today at:
+                  <a href="https://haileyvillechristianchurch.com/"
+                    >https://haileyvillechristianchurch.com/</a
+                  >
+                </p>
               </div>
             </div>
           </div>
           <div class="col">
             <div
-              class="h-100 shadow-lg d-flex align-items-center justify-content-center gallery"
+              class="h-100 shadow-lg p-2 d-flex align-items-center justify-content-center gallery rounded-1"
             >
               <img
                 src="./images/flappy-bird.jpg"
@@ -839,14 +870,75 @@
                 alt="..."
               />
               <div class="overlay">
-                <h3>Title</h3>
-                <p>Content</p>
+                <h3>Blappy Fird</h3>
+                <p class="container">
+                  This is a silly Flappy Bird Clone that I made in Unity. You
+                  can download it from this github link:
+                  <a href="https://github.com/SamuelDugger/BlappyFird"
+                    >https://github.com/SamuelDugger/BlappyFird</a
+                  >
+                </p>
               </div>
             </div>
           </div>
           <div class="col">
             <div
-              class="h-100 shadow-lg d-flex align-items-center justify-content-center gallery"
+              class="h-100 shadow-lg p-2 d-flex align-items-center justify-content-center gallery rounded-1"
+            >
+              <img
+                src="./images/GASC.PNG"
+                class="card-img-top img-fluid img-gallery"
+                alt="..."
+              />
+              <div class="overlay">
+                <h3>GASC</h3>
+                <p class="container">
+                  Service monitor and controller that I made for Choctaw Nation
+                  Commerce to help handle the amount of Servers and Services
+                  they handle.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="h-100 shadow-lg p-2 d-flex align-items-center justify-content-center gallery rounded-1"
+            >
+              <img
+                src="./images/Pong460x276.jpg"
+                class="card-img-top img-fluid img-gallery"
+                alt="..."
+              />
+              <div class="overlay">
+                <h3>Pong Clone</h3>
+                <p class="container">
+                  This is a Pong Clone that I am making in Unity with a unique
+                  twist. This is still currently in development.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="h-100 shadow-lg p-2 d-flex align-items-center justify-content-center gallery rounded-1"
+            >
+              <img
+                src="./images/DuplicateIPChecker.PNG"
+                class="card-img-top img-fluid img-gallery"
+                alt="..."
+              />
+              <div class="overlay">
+                <h3>Duplicate IP Checker</h3>
+                <p class="container">
+                  Duplicate IP Checker was made for identifying duplicate IP
+                  addresses for the sentinels at the Choctaw Casinos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="h-100 shadow-lg p-2 d-flex align-items-center justify-content-center gallery rounded-1"
             >
               <img
                 src="./images/pokemon.jpg"
@@ -854,8 +946,11 @@
                 alt="..."
               />
               <div class="overlay">
-                <h3>Title</h3>
-                <p>Content</p>
+                <h3>Emerald ROM HACK</h3>
+                <p class="container">
+                  This is a Pokemon Emerald ROM HACK that is still in
+                  development...
+                </p>
               </div>
             </div>
           </div>
@@ -897,9 +992,9 @@
                   ><i class="bi bi-facebook"></i
                 ></a>
               </li>
-              <li class="list-inline-item">
+              <!-- <li class="list-inline-item">
                 <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
-              </li>
+              </li> -->
               <li class="list-inline-item">
                 <a href="#" class="text-light"
                   ><i class="bi bi-linkedin"></i
