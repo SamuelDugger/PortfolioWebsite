@@ -29,101 +29,97 @@
     <title>Portfolio</title>
   </head>
   <body data-bs-theme="light">
-    <button
-      type="button"
-      class="btn btn-danger btn-floating btn-lg"
-      id="btn-back-to-top"
-    >
-      <i class="bi bi-arrow-up"></i>
-    </button>
-    <div id="progressBar"></div>
-    <div id="scrollPath"></div>
-    <div class="container-fluid mt-5">
-      <header class="top mt-5 mx-4">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand logo fs-1" href="index.html">SD</a>
-          <div class="d-flex">
-            <div class="toggler out-nav my-2">
-              <div class="checkbox text-center">
-                <input
-                  type="checkbox"
-                  id="cbx"
-                  style="display: none"
-                  onclick="toggleTheme()"
-                />
-                <label for="cbx" class="toggle"><span></span></label>
-              </div>
-            </div>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-              style="order: 1"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNavAltMarkup"
-          >
-            <div class="navbar-nav">
-              <a class="nav-item nav-link active fw-bold" href="index.html"
-                >Home <span class="sr-only"></span
-              ></a>
-              <a class="nav-item nav-link fw-bold" href="index.html#about"
-                >About</a
-              >
-              <a class="nav-item nav-link fw-bold" href="index.html#skills"
-                >Skills</a
-              >
-              <a class="nav-item nav-link fw-bold" href="index.html#portf"
-                >Portfolio</a
-              >
-              <div class="toggler in-nav my-1">
+    <div class="header">
+      <button
+        type="button"
+        class="btn btn-danger btn-floating btn-lg"
+        id="btn-back-to-top"
+      >
+        <i class="bi bi-arrow-up"></i>
+      </button>
+      <div id="progressBar"></div>
+      <div id="scrollPath"></div>
+      <div class="container-fluid mt-5">
+        <header class="top mt-5 mx-4">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand logo fs-1" href="index.html">SD</a>
+            <div class="d-flex">
+              <div class="toggler out-nav my-2">
                 <div class="checkbox text-center">
                   <input
                     type="checkbox"
-                    id="cbx2"
+                    id="cbx"
                     style="display: none"
                     onclick="toggleTheme()"
                   />
-                  <label for="cbx2" class="toggle"><span></span></label>
+                  <label for="cbx" class="toggle"><span></span></label>
+                </div>
+              </div>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                style="order: 1"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active fw-bold" href="index.html">
+                  Home
+                  <span class="sr-only"></span>
+                </a>
+                <a class="nav-item nav-link fw-bold" href="index.html#about">
+                  About
+                </a>
+                <a class="nav-item nav-link fw-bold" href="index.html#skills">
+                  Skills
+                </a>
+                <a class="nav-item nav-link fw-bold" href="index.html#portf">
+                  Portfolio
+                </a>
+                <div class="toggler in-nav my-1">
+                  <div class="checkbox text-center">
+                    <input
+                      type="checkbox"
+                      id="cbx2"
+                      style="display: none"
+                      onclick="toggleTheme()"
+                    />
+                    <label for="cbx2" class="toggle"><span></span></label>
+                  </div>
                 </div>
               </div>
             </div>
+          </nav>
+        </header>
+        <section class="hero-section text-center container py-5">
+          <div class="hero">
+            <div class="hero-text">
+              <h1 class="name display-4 fw-bold">Hi, I'm Samuel Dugger</h1>
+              <p class="fs-4">
+                I design and code beautifully simple things, and I love what I
+                do.
+              </p>
+            </div>
+            <img
+              class="hero-img img-fluid mx-auto shadow-lg"
+              src="./images/Me.png"
+              alt="logo"
+            />
           </div>
-        </nav>
-      </header>
-      <section class="hero-section text-center container py-5">
-        <div class="hero">
-          <div class="hero-text">
-            <h1 class="name display-4 fw-bold">Hi, I'm Samuel Dugger</h1>
-            <p class="fs-4">
-              I design and code beautifully simple things, and I love what I do.
-            </p>
-          </div>
-          <img
-            class="hero-img img-fluid mx-auto shadow-lg"
-            src="./images/Me.png"
-            alt="logo"
-          />
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
-    <section
-      class="body py-5 about"
-      id="about"
-      style="
-        background-image: url('./images/');
-        background-size: cover;
-        background-position: center;
-      "
-    >
+    <section class="body py-5 about" id="about">
       <div class="container mx-auto">
         <h1 class="display-4 fw-bold text-center py-4">About me</h1>
         <div class="row gx-5 gy-5">
@@ -853,9 +849,9 @@
                 <p class="container">
                   This website was created for the Haileyville Christian Church
                   for my capstone course and is still up today at:
-                  <a href="https://haileyvillechristianchurch.com/"
-                    >https://haileyvillechristianchurch.com/</a
-                  >
+                  <a href="https://haileyvillechristianchurch.com/">
+                    https://haileyvillechristianchurch.com/
+                  </a>
                 </p>
               </div>
             </div>
@@ -870,13 +866,14 @@
                 alt="..."
               />
               <div class="overlay">
-                <h3>Blappy Fird</h3>
+                <h3>Flappy Bird Clone</h3>
                 <p class="container">
-                  This is a silly Flappy Bird Clone that I made in Unity. You
+                  This is a personal project clone of Flappy Bird that I made in
+                  Unity to test out my knowledge and experiment with Unity. You
                   can download it from this github link:
-                  <a href="https://github.com/SamuelDugger/BlappyFird"
-                    >https://github.com/SamuelDugger/BlappyFird</a
-                  >
+                  <a href="https://github.com/SamuelDugger/BlappyFird">
+                    https://github.com/SamuelDugger/BlappyFird
+                  </a>
                 </p>
               </div>
             </div>
@@ -894,8 +891,8 @@
                 <h3>GASC</h3>
                 <p class="container">
                   Service monitor and controller that I made for Choctaw Nation
-                  Commerce to help handle the amount of Servers and Services
-                  they handle.
+                  Commerce. This application is modular and allows users to
+                  remotely control their server services.
                 </p>
               </div>
             </div>
@@ -941,15 +938,15 @@
               class="h-100 shadow-lg p-2 d-flex align-items-center justify-content-center gallery rounded-1"
             >
               <img
-                src="./images/pokemon.jpg"
+                src="./images/2DRPG.PNG"
                 class="card-img-top img-fluid img-gallery"
                 alt="..."
               />
               <div class="overlay">
-                <h3>Emerald ROM HACK</h3>
+                <h3>2D Top Down RPG</h3>
                 <p class="container">
-                  This is a Pokemon Emerald ROM HACK that is still in
-                  development...
+                  This is 2D Top Down RPG that I am making in Unity. This
+                  project is still in development.
                 </p>
               </div>
             </div>
@@ -988,17 +985,17 @@
           <div class="col">
             <ul class="list-inline mb-0">
               <li class="list-inline-item">
-                <a href="#" class="text-light"
-                  ><i class="bi bi-facebook"></i
-                ></a>
+                <a href="#" class="text-light">
+                  <i class="bi bi-facebook"></i>
+                </a>
               </li>
               <!-- <li class="list-inline-item">
                 <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
               </li> -->
               <li class="list-inline-item">
-                <a href="#" class="text-light"
-                  ><i class="bi bi-linkedin"></i
-                ></a>
+                <a href="#" class="text-light">
+                  <i class="bi bi-linkedin"></i>
+                </a>
               </li>
               <!-- Add more social media icons as needed -->
             </ul>
