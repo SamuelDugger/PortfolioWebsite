@@ -61,8 +61,9 @@ body p {
 }
 
 .hero-img {
-  width: 300px;
-  height: 300px;
+  width: 100%; /* Use the full width of the container */
+  max-width: 300px; /* Set a maximum width to maintain responsiveness */
+  height: auto; /* Allow the height to adjust based on the aspect ratio */
   object-fit: cover;
   border-radius: 50%;
 }
@@ -79,6 +80,7 @@ body p {
 /* [data-bs-theme="dark"] .body {
 }
  */
+
 .hero-section {
   padding: 20px;
 }
@@ -466,6 +468,17 @@ body p {
 
 h1 {
   font-family: "eurostile", sans-serif;
+}
+body {
+  background-image: url("../images/cubes.png");
+}
+
+.bot-background {
+  background-image: url("../images/gplay.png");
+}
+
+footer {
+  background-image: url("../images/green-dust-and-scratches.png");
 }
 
 #btn-back-to-top {
