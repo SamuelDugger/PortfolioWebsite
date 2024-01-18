@@ -469,13 +469,71 @@ body p {
 h1 {
   font-family: "eurostile", sans-serif;
 }
+
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
 body {
+  background: url("../images/cubes.png") repeat 0 0;
+  background-size: 75px 75px;
+  -webkit-animation: bg-scrolling-reverse 2.5s infinite; /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 2.5s infinite; /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 2.5s infinite; /* Opera 12+ */
+  animation: bg-scrolling-reverse 2.5s infinite; /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 75px 75px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 75px 75px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 75px 75px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 75px 75px;
+  }
+}
+
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 75px 75px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 75px 75px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 75px 75px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 75px 75px;
+  }
+}
+
+/* body {
   background-image: url("../images/cubes.png");
 }
 
 .bot-background {
   background-image: url("../images/gplay.png");
-}
+} */
 
 footer {
   background-image: url("../images/green-dust-and-scratches.png");

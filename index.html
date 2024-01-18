@@ -29,132 +29,133 @@
     <title>Portfolio</title>
   </head>
   <body data-bs-theme="light">
-    <div class="header">
-      <button
-        type="button"
-        class="btn btn-danger btn-floating btn-lg"
-        id="btn-back-to-top"
-      >
-        <i class="bi bi-arrow-up"></i>
-      </button>
-      <div id="progressBar"></div>
-      <div id="scrollPath"></div>
-      <div class="container-fluid mt-5">
-        <header class="top mt-5 mx-4">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand logo fs-1" href="index.html">SD</a>
-            <div class="d-flex">
-              <div class="toggler out-nav my-2">
-                <div class="checkbox text-center">
-                  <input
-                    type="checkbox"
-                    id="cbx"
-                    style="display: none"
-                    onclick="toggleTheme()"
-                  />
-                  <label for="cbx" class="toggle"><span></span></label>
-                </div>
-              </div>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-                style="order: 1"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </div>
-            <div
-              class="collapse navbar-collapse justify-content-end"
-              id="navbarNavAltMarkup"
-            >
-              <div class="navbar-nav">
-                <a class="nav-item nav-link active fw-bold" href="index.html">
-                  Home
-                  <span class="sr-only"></span>
-                </a>
-                <a class="nav-item nav-link fw-bold" href="index.html#about">
-                  About
-                </a>
-                <a class="nav-item nav-link fw-bold" href="index.html#skills">
-                  Skills
-                </a>
-                <a class="nav-item nav-link fw-bold" href="index.html#portf">
-                  Portfolio
-                </a>
-                <div class="toggler in-nav my-1">
+    <div class="top-background">
+      <div class="header">
+        <button
+          type="button"
+          class="btn btn-danger btn-floating btn-lg"
+          id="btn-back-to-top"
+        >
+          <i class="bi bi-arrow-up"></i>
+        </button>
+        <div id="progressBar"></div>
+        <div id="scrollPath"></div>
+        <div class="container-fluid mt-5">
+          <header class="top mt-5 mx-4">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand logo fs-1" href="index.html">SD</a>
+              <div class="d-flex">
+                <div class="toggler out-nav my-2">
                   <div class="checkbox text-center">
                     <input
                       type="checkbox"
-                      id="cbx2"
+                      id="cbx"
                       style="display: none"
                       onclick="toggleTheme()"
                     />
-                    <label for="cbx2" class="toggle"><span></span></label>
+                    <label for="cbx" class="toggle"><span></span></label>
+                  </div>
+                </div>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarNavAltMarkup"
+                  aria-controls="navbarNavAltMarkup"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                  style="order: 1"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+              <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarNavAltMarkup"
+              >
+                <div class="navbar-nav">
+                  <a class="nav-item nav-link active fw-bold" href="index.html">
+                    Home
+                    <span class="sr-only"></span>
+                  </a>
+                  <a class="nav-item nav-link fw-bold" href="index.html#about">
+                    About
+                  </a>
+                  <a class="nav-item nav-link fw-bold" href="index.html#skills">
+                    Skills
+                  </a>
+                  <a class="nav-item nav-link fw-bold" href="index.html#portf">
+                    Portfolio
+                  </a>
+                  <div class="toggler in-nav my-1">
+                    <div class="checkbox text-center">
+                      <input
+                        type="checkbox"
+                        id="cbx2"
+                        style="display: none"
+                        onclick="toggleTheme()"
+                      />
+                      <label for="cbx2" class="toggle"><span></span></label>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </nav>
-        </header>
-        <section class="hero-section text-center container py-5">
-          <div class="hero">
-            <div class="hero-text">
-              <h1 class="name display-4 fw-bold">Hi, I'm Samuel Dugger</h1>
-              <p class="fs-4 py-3">
-                I design and code beautifully simple things, and I love what I
-                do.
-              </p>
-            </div>
-            <img
-              class="hero-img img-fluid mx-auto shadow-lg rounded-circle"
-              src="./images/Headshots-Jan24-Samuel Dugger.jpg"
-              alt="logo"
-            />
-          </div>
-        </section>
-      </div>
-    </div>
-    <section class="body about py-5" id="about">
-      <div class="container mx-auto">
-        <h1 class="display-4 fw-bold text-center py-4">About me</h1>
-        <div class="row gx-5 gy-5">
-          <div class="col-md-6">
-            <div
-              class="image-container shadow-lg"
-              style="
-                max-height: 550px;
-                overflow: hidden;
-                border-radius: 25% 10%;
-              "
-            >
+            </nav>
+          </header>
+          <section class="hero-section text-center container py-5">
+            <div class="hero">
+              <div class="hero-text">
+                <h1 class="name display-4 fw-bold">Hi, I'm Samuel Dugger</h1>
+                <p class="fs-4 py-3">
+                  I design and code beautifully simple things, and I love what I
+                  do.
+                </p>
+              </div>
               <img
-                src="./images/Image.jpg"
-                class="img-fluid mx-auto shadow-lg"
-                style="width: 100%; height: auto; border-radius: 25% 10%"
-                alt=""
+                class="hero-img img-fluid mx-auto shadow-lg rounded-circle"
+                src="./images/Headshots-Jan24-Samuel Dugger.jpg"
+                alt="logo"
               />
             </div>
-          </div>
-          <div class="col-md-6">
-            <p class="fs-5">
-              I'm a Software Developer and I love creating Software that makes a
-              positive impact and helps people. I proudly earned my Bachelor's
-              degree in Software Development with honors from OSU Institute of
-              Technology. Trustworthy, creative, and adept at communication, I
-              am eager to contribute my skills to a dynamic and rewarding
-              organization, ready to take on challenges that fuel both personal
-              and professional growth.
-            </p>
-          </div>
+          </section>
         </div>
       </div>
-    </section>
-
+      <section class="body about py-5" id="about">
+        <div class="container mx-auto">
+          <h1 class="display-4 fw-bold text-center py-4">About me</h1>
+          <div class="row gx-5 gy-5">
+            <div class="col-md-6">
+              <div
+                class="image-container shadow-lg"
+                style="
+                  max-height: 550px;
+                  overflow: hidden;
+                  border-radius: 25% 10%;
+                "
+              >
+                <img
+                  src="./images/Image.jpg"
+                  class="img-fluid mx-auto shadow-lg"
+                  style="width: 100%; height: auto; border-radius: 25% 10%"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <p class="fs-5">
+                I'm a Software Developer and I love creating Software that makes
+                a positive impact and helps people. I proudly earned my
+                Bachelor's degree in Software Development with honors from OSU
+                Institute of Technology. Trustworthy, creative, and adept at
+                communication, I am eager to contribute my skills to a dynamic
+                and rewarding organization, ready to take on challenges that
+                fuel both personal and professional growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <div class="bot-background">
       <section class="body py-5 skills" id="skills">
         <div class="container mx-auto max-width-75 text-center">
